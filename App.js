@@ -64,7 +64,7 @@ export default function App() {
 
 
           <NavigationContainer>
-            <Stack.Navigator initialRouteName="Homer">
+            <Stack.Navigator initialRouteName="Home">
               <Stack.Screen name='Land' component={Land} />
               <Stack.Screen name="Home" component={HomeScreen} />
               <Stack.Screen name="Rights" component={Rights} />
