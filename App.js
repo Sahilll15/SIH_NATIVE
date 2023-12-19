@@ -49,6 +49,8 @@ import BailDetail from './screens/Court/BailDetail';
 import LawyerDetailsPage from './screens/Prisioner/LawyerSelect';
 import Rights from './screens/Prisioner/Rights';
 import Bot from './screens/Bot';
+import AddProduct from './screens/Market/AddProduct';
+
 // import ChatBot from './screens/ChatBot/ChatBot';
 const Stack = createNativeStackNavigator();
 // new@gmail.com
@@ -62,7 +64,7 @@ export default function App() {
 
 
           <NavigationContainer>
-            <Stack.Navigator initialRouteName="Login">
+            <Stack.Navigator initialRouteName="AddProduct">
               <Stack.Screen name='Land' component={Land} />
               <Stack.Screen name="Home" component={HomeScreen} />
               <Stack.Screen name="Rights" component={Rights} />
@@ -106,6 +108,7 @@ export default function App() {
               <Stack.Screen name="LawyerConnect" component={LawyerConnect} />
               <Stack.Screen name="BailList" component={BailList} />
               <Stack.Screen name="BailDetail" component={BailDetail} />
+              <Stack.Screen name="AddProduct" component={AddProduct} />
             </Stack.Navigator>
             <Bottom />
             <Toast ref={(ref) => Toast.setRef(ref)} />
