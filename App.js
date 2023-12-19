@@ -49,6 +49,7 @@ import BailDetail from './screens/Court/BailDetail';
 import LawyerDetailsPage from './screens/Prisioner/LawyerSelect';
 import Rights from './screens/Prisioner/Rights';
 import Bot from './screens/Bot';
+import ClientDocument from './screens/Prisioner/ClientDocument';
 import AddProduct from './screens/Market/AddProduct';
 
 // import ChatBot from './screens/ChatBot/ChatBot';
@@ -108,6 +109,7 @@ export default function App() {
               <Stack.Screen name="LawyerConnect" component={LawyerConnect} />
               <Stack.Screen name="BailList" component={BailList} />
               <Stack.Screen name="BailDetail" component={BailDetail} />
+              <Stack.Screen name="ClientDocument" component={ClientDocument} />
               <Stack.Screen name="AddProduct" component={AddProduct} />
             </Stack.Navigator>
             <Bottom />
