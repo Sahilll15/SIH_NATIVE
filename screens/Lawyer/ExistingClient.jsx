@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useLawyer } from '../../Context/LawyerContext';
 
-const ExisitngClient = ({ route, navigation }) => {
+const ExistingClient = ({ route, navigation }) => {
   const { setCurrentClientFunction, currentClient } = useLawyer();
 
   let token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTc4NzFmOWZjZmJkNWI1M2MzNzQ3NzMiLCJpYXQiOjE3MDI2NTMyMzh9.htgnfrEThCRoY1gBlkLRDW_bSmK7nosmjtipnC_mdGo`
@@ -28,6 +28,9 @@ const ExisitngClient = ({ route, navigation }) => {
   }
 
 
+  const handleFileCase = () => {
+
+  }
 
 
   const handleViewDocuments = () => {
@@ -75,7 +78,7 @@ const ExisitngClient = ({ route, navigation }) => {
           <Icon name="phone" size={20} color="white" style={styles.icon} />
           <Text style={styles.buttonText}>Call Client</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonde} onPress={handleCallClient}>
+        <TouchableOpacity style={styles.Filecase} onPress={handleFileCase}>
           <Icon name="phone" size={20} color="white" style={styles.icon} />
           <Text style={styles.buttonText}>File Case Client</Text>
         </TouchableOpacity>
@@ -157,4 +160,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ExisitngClient;
+export default ExistingClient;
